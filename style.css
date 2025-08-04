@@ -39,6 +39,9 @@ header{
     gap: 3rem;
     z-index: 10;
 }
+.nav-input{
+    display: none;
+}
 .nav-link{
     display: flex;
     color: #D6D8DB;
@@ -118,7 +121,6 @@ header{
     padding: 200px 100px 62px 100px
 }
 .contain .title-banner{
-    display: inline-block;
     margin-bottom: 66px;
     position: relative;
     display: flex;
@@ -434,7 +436,7 @@ header{
 }
 .galeria-prue .menu-cart-compl h2{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 110%;
     text-transform: uppercase;
     color: #1B1C1E;
@@ -846,4 +848,319 @@ footer .redes-sociales .social-icon a > i{
 }
 footer .redes-sociales .social-icon a > i:hover {
     color: #696a6b;
+}
+
+/* whatsApp */
+
+.whatsapp-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 15px;
+    right: 45px;
+    z-index: 9999999;
+}
+.whatsapp-container img{
+    width: 60px;
+    height: auto;
+    background: #36c62a;
+    border-radius: 100%;
+    padding: 8px;
+    border: solid 4px white;
+}
+.icono-whatsapp{
+    display: block;
+    margin: 10px;
+}
+
+/* Para Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* responsive */
+
+@media(max-width:715px){
+    /* banner */
+    .container-banner{
+        padding: 30px 0;
+    }
+    .banner{
+        height: auto;
+    }
+    .banner .container-banner .contain{
+        margin-bottom: 100px;
+        text-align: left;
+    }
+    .contain .title-banner .p-1, .contain .title-banner .p-2{
+        font-size: 42px;
+    }
+    .contain .title-banner{
+        justify-content: center;
+        gap: 20px;
+    }
+    .banner .contain p{
+        text-align: center;
+    }
+    .btn-banner-menu .icon, .btn-banner-menu:after{
+        display: none;
+    }
+    .btn-banner-menu{
+        margin-bottom: 4rem;
+        justify-content: center;
+    }
+
+    /* Premium */
+
+    .container-premium .title-premium h2,
+    .container-menu .title-menu h2, .container-oferta
+    .title-oferta h2, .container-gallery .title-gallery h2{
+        font-size: 36px;
+        text-align: center;
+        line-height: 120%;
+        width: min-content;
+    }
+    .container-premium .title-premium,
+    .container-menu .title-menu, .container-oferta
+    .title-oferta, .container-gallery .title-gallery{
+        gap: 20px;
+    }
+    .coffees-premium{
+        width: 96%;
+    }
+    .container-premium{
+        height: auto;
+        clip-path: none;
+    }
+    .container-coffees-premium{
+        padding: 30px 0;
+    }
+
+    /* Menú */
+
+    .container-menu .title-menu{
+        padding: 50px 0 50px 0;
+    }
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-projects{
+        width: 100%;
+    }
+    .galeria-img{
+        width: 95%;
+    }
+    .galeria-card{
+        width: 100%;
+    }
+    .gallery-menu .filter-item{
+        margin-bottom: 30px;
+    }
+    .galeria-card{
+        height: auto;
+    }
+    .menu-cart-compl{
+        padding: 0 25px 90px 22px;
+    }
+    .galeria-prue .menu-cart-compl .menu-list-cart .dishes-item .number-list{
+        width: 16.66666667%;
+    }
+    .galeria-prue .menu-cart-compl .menu-list-cart .dishes-item .title-list-cart{
+        width: 83.33333333%;
+    }
+
+    /* ofertas */
+
+    .col-xl-ofertas,
+    .row-ofertas .col-xl-ofertas img{
+        width: 95%;
+    }
+    .row-ofertas .col-xl-ofertas .conten-oferta{
+        width: 98%;
+    }
+    .row-ofertas .col-xl-ofertas img{
+        width: 100%;
+    }
+    .col-xl-ofertas{
+        gap: 20px;
+    }
+
+    /* contact */
+
+    .conten-contacto{
+        width: 95%;
+    }
+    .conten-contacto{
+        margin: 0;
+    }
+    .contacto{
+        justify-content: center;
+    }
+    .form-contact{
+        flex-direction: column;
+    }
+    .form-contact .entrada, .form-contact .contacto-inf{
+        width: 100%;
+    }
+    .detail-contacto .title-contacto h2{
+        font-size: 30px;    
+    }
+    
+}
+
+@media(max-width:1000px){
+ /* header */
+    .nav-container{
+        --icon-toggle-menu: url("assets/menu-close.svg");  
+        --transform-menu-show: translate(-100%);
+    }
+    .nav-list{ 
+        transform: var(--transform-menu-show);
+        position: absolute;
+        inset: 0;
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+        padding: 14rem 11%;
+        background-color: #fff;
+        z-index: 10;
+        transition: .5s transform;
+        align-content: start;
+        max-height: max-content;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        padding: 24px 10px;
+        border-bottom: 1px solid #9f9d9dc9;
+    }
+    .nav-image, .nav-toggle{
+        z-index: 20;
+    }
+    .nav-toggle{
+        width: 40px;
+        height: 40px;
+        background-image: var(--icon-toggle-menu);
+        background-size: cover;
+        cursor: pointer;
+        transition: background-image .5s;
+    }
+    .nav-input{
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+    .nav-container:has(.nav-input:checked){
+        --icon-toggle-menu: url("assets/menu-open.svg"); 
+        --transform-menu-show: translate(0);
+        overflow: hidden;
+    }
+    .nav-list .nav-item .menu-servicios{
+        width: 100%;
+        position: unset;
+        visibility: hidden;
+        top: 0%;
+        left: 0;
+        box-shadow: 0 0 0 0;
+        transform: translateY(0px);
+    }
+    .nav-list .nav-item:hover .menu-servicios{
+        transform: translate(2px);
+        visibility: visible;
+        opacity: 1;
+        border-top: 2px solid #F01E28;
+        transition: 0.2s ease;
+    }
+    .nav-list .nav-item button{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 715px) and (max-width: 1000px){
+    /* banner */
+    .container-banner{
+        padding: 200px 20px 62px 20px;
+    }
+    /* Premium */
+    .coffees-premium{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .container-premium{
+        height: auto;
+        clip-path: none;
+    }
+
+    /* Menú */
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+    }
+    .galeria-img, .list-projects{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-menu .title-menu{
+        padding: 60px 0;
+    }
+    .row-ofertas .col-xl-ofertas .conten-oferta{
+        width: 80%;
+        margin-top: 3rem;
+    }
+    .conten-contacto{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+
+    /* banner */
+    .container-banner{
+        padding: 200px 50px 62px 100px;
+    }
+    .coffees-premium{
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+    .container-premium{
+        height: auto;
+        clip-path: none;
+    }
+    /* premium */
+
+    .container-menu .title-menu{
+        padding: 60px 0;
+    }
+
+    /* menu */
+    .galeria-card{
+        height: auto;
+    }
+    .menu-cart-compl{
+        padding: 0 25px 30px 22px;
+    }
+
+    /* ofertas */
+
+    .col-xl-ofertas{
+        width: 90%;
+    }
+    .row-ofertas .col-xl-ofertas img{
+        width: 500px;
+    }
+
+    /* contacto */
+
+    .conten-contacto{
+        width: 45%;
+    }
+
 }
