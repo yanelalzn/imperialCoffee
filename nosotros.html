@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/javascript.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <title>Imperial Coffee - Nosotros</title>
+</head>
+<body>
+<header style="background-color: #42392C";>
+        <nav class="nav-container">
+            <figure class="nav-image">
+                <a href="index.html"><img src="img/logo.png" alt="" class="nav-logo"></a>
+            </figure>
+            <label class="nav-toggle">
+                <input type="checkbox" id="menu-input" class="nav-input">
+            </label>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <button class="">Tener un Café</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner-menu">
+            <div class="title-banner-menu hidden-left">
+                <img src="img/set-left.png" alt="left">
+                <h2>Nosotros</h2>
+                <img src="img/set-right.png" alt="right">
+            </div>
+            <figure class="hidden-right">
+                <img src="img/cafe-banner.png" alt="">
+            </figure>
+        </div>
+        <img class="img-banner-fondo" src="img/gramo-cafe.png" alt="">
+    </header>
+    <section class="whatsapp-container">
+        <a href="https://wa.me/51942875386?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
+        <img class="icono-whatsapp" src="img/whatsApps.png" alt=""></a>
+    </section>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight))
+        })
+	</script>
+</body>
+</html>
