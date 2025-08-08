@@ -26,4 +26,3 @@ filterElements.addEventListener("click", (event) => {
         });
     }
 });
-
