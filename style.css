@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 *{
     padding: 0;
@@ -91,6 +92,44 @@ header{
     left: 100%;
     transition: all 0.7s;
 }
+.nav-item{
+    text-align: center;
+}
+
+/* coworking */
+
+.nav-link-cowork {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Fredoka", sans-serif;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 3px #ffa500,
+    0 0 3px #ffffff,
+    0 0 3px #ff8c00,
+    0 0 3px #ff8c00,
+    0 0 3px #ff8c00;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  line-height: 10px;
+}
+
+.nav-animate:hover {
+    animation-name: elementor-animation-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes elementor-animation-pulse {
+  25% {
+    transform: scale(1.1);
+}
+75% {
+    transform: scale(0.9);
+}
+}
 
 /* banner */
 
@@ -99,7 +138,7 @@ header{
     width: 100%;
     height: 850px;
     background-image: url(img/banner.png);
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -1122,7 +1161,6 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 46%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 20px 0;
 }
 .container-nosotros figure img{
@@ -1133,18 +1171,16 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 51px;
     text-transform: uppercase;
     color: var(--color-cream);
-    color: #F3EFE6;
+    line-height: 50px;
 }
 .nosotros-content .title-premium{
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 .nosotros-content .text-nosotros{
-    width: 100%;
+    width: 90%;
     font-size: 22px;
     font-family: lato, sans-serif;
-    text-align: center;
     padding: 20px 0;
     color: #F3EFE6;
 }
@@ -1486,6 +1522,59 @@ input[type="number"]::-webkit-inner-spin-button {
    .container-form .contain-form{
         margin: 0 1% 5rem 1%;
    }
+
+   /* Nosotros */
+
+   .container-nosotros{
+        flex-direction: column;
+        align-items: center;
+   }
+   .container-nosotros figure, .container-nosotros .nosotros-content{
+        width: 95%;
+   }
+   .container-nosotros .nosotros-content h2,
+   .essence-container .title-menu h2,
+   .question-container-nosotros h2{
+        text-align: center;
+        line-height: 40px;
+        font-size: 36px;
+   }
+   .nosotros-content .text-nosotros{
+        width: 100%;
+        text-align: center;
+   }
+   .container-nosotros .nosotros-content{
+        margin-top: 7rem;
+   }
+   .essence-container{
+        padding: 0rem 0;
+   }
+    .essence-container .title-menu{
+        gap: 20px;
+    }
+    .essence-container .essence-contain .essence-inf .essence-inf-width,
+    .essence-container .essence-contain .essence-inf .essence-img{
+        width: 100%;
+    }
+    .essence-container .essence-contain .essence-inf{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .slider{
+        height: auto;
+    }
+    .question-container-nosotros{
+        padding: 50px 0 0 0;
+    }
+    .essence-container .essence-contain .essence-inf{
+        padding: 0;
+    }
+    .essence-container .essence-contain .essence-inf .essence-inf-width{
+        padding: 20px 20px 0 20px;
+    }
+    .essence-inf .essence-img img{
+        margin-bottom: 2rem;
+    }
     
 }
 
@@ -1648,6 +1737,24 @@ input[type="number"]::-webkit-inner-spin-button {
     .banner-menu figure{
         right: 10%;
     }
+
+    /* Nosotros */
+
+    .container-nosotros{
+        justify-content: space-around;
+    }
+    .container-nosotros .nosotros-content h2{
+        font-size: 30px;
+    }
+    .questions-container{
+        max-width: 750px;
+    }
+    .nosotros-content .text-nosotros{
+        width: 100%;
+    }
+    .container-nosotros .nosotros-content{
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1300px){
@@ -1720,5 +1827,11 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .banner-menu figure{
         right: 10%;
+    }
+    .container-nosotros{
+        justify-content: space-around;
+    }
+    .questions-container{
+        max-width: 900px;
     }
 }

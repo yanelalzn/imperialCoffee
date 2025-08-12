@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #222222;
+}
+
+/* banner */
+
+.container-banner-cowork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+.contain-banner-cowork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.contain-banner-cowork .contain-banner-title{
+    position: static;
+    line-height: 80px;
+    z-index: 10;
+}
+.contain-banner-cowork .contain-banner-title h2{
+    font-size: 80px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    color: #fff;
+}
+.contain-banner-cowork .contain-banner-title h2 > i{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.contain-banner-cowork .contain-banner-title h2 > strong{
+    text-transform: uppercase;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+}
+.contain-banner-figure{
+    width: 90%;
+    margin-top: -40px;
+}
+.contain-banner-figure img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 243.5px;
+
+}
+
+.cowork-banner-down{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.cowork-banner-down p{
+    color: #fff;
+    line-height: 18px;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 100;
+}
+.cowork-banner-down img{
+    width: 120px;
+    height: 120px;
+}
+
+/* MARCAS*/
+
+.marcas{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.scroll{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+.scroll .este{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+    animation: animate 30s linear infinite;
+}
+.container-gallery{
+    padding: 0;
+}
+.scroll p{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 30px;
+    width: auto;
+    height: 80px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+.scroll i{
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: auto;
+    padding: 11px;
+    height: 50px;
+}
+.scroll p, .scroll i{
+    margin: 0 20px;
+    transition: .5s;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll img:not(:hover){
+    filter: grayscale(100%);
+}
+@keyframes animate{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Espacios de Oficinas */
+
+.container-space{
+    padding: 6rem 0;
+}
+.container-space .contain-banner-title{
+    text-align: center;
+}
+.container-space .contain-banner-title h2{
+    font-size: 52px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #fff;
+}
+.container-space .contain-banner-title h2 > i{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+}
+.container-space .contain-banner-title h2 > strong{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+}
+.container-office-space{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+}
+.contain-office{
+    position: relative;
+    width: 23%;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.contain-office p:nth-child(1){
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #fff;
+    text-align: right;
+    line-height: 25px;
+    width: 90%;
+    font-size: 20px;
+}
+.contain-position img{
+    position: relative;
+}
+.contain-position p{
+    background-color: transparent;
+    position: absolute;
+    width: 40%;
+    top: 80%;
+    right: 50%;
+    color: #fff;
+    font-size: 30px;
+    line-height: 28px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.contain-office .office-flecha{
+    width: 200px;
+    height: 200px;
+}
+
+/* Servicios */
+
+.container-service-cowork{
+    background-color: #000;
+    width: 88%;
+    margin: auto;
+    border-radius: 50px;
+}
+.container-service-cowork .contain-banner-title{
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+.container-service-cowork .contain-banner-title h2{
+    font-size: 52px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #fff;
+}
+.container-service-cowork .contain-banner-title h2 > i{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+}
+.container-service-cowork .contain-banner-title h2 > strong{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+}
+.container-service-unid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.container-service-unid .contain-unid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 16%;
+    height: 30vh;
+    margin: 10px;
+    padding: 30px 20px;
+    background-color: transparent;
+    background-color: red;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container-service-unid .contain-unid i{
+    color: #fff;
+    font-size: 30px;
+}
+.container-service-unid .contain-unid p{
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Question */
+
+.question-container-cowork .question-container-title{
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+.question-container-cowork .question-container-title h2{
+    font-size: 52px;
+    color: #fff;
+}
+.question-container-cowork .question-container-title h2 > strong{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+}
+.question-container-cowork .questions-container span{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+}
+.question-container-cowork .questions-container .question p{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.question button{
+    border: none;
+}
