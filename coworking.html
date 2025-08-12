@@ -169,51 +169,58 @@
             </div>
         </div>
     </div>
-
     <div class="container-service-cowork">
         <div class="contain-banner-title">
             <h2><strong>Experimenta</strong><i> las mejores<br>instalaciones que </i><strong>ofrecemos</strong></h2>
         </div>
-        <div class="container-service-unid">
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx bx-wifi'></i>
+                    <p>WI-FI</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx bx-webcam'></i>
+                    <p>cctv<br>seguridad</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx  bx-cup-hot'></i>
+                    <p>Cafes, Tes y Aguas Gratis</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx  bx-building'  ></i> 
+                    <p>Zona de acceso de control</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx bx-printer'></i>
+                    <p>Imprimir fotocopias y escanear</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx  bx-water-spray'  ></i> 
+                    <p>Limpieza profesional diaria</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx bx-phone-call' ></i>
+                    <p>Llamadas ilimitadas</p>
+                </div>
             </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
-            </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
-            </div>
-            <div class="contain-unid">
-                <i class='bx bx-wifi'></i>
-                <p>WI-FI</p>
+            <div class="card">
+                <div class="card-content">
+                    <i class='bx  bx-desk'  ></i> 
+                    <p>Recepción</p>
+                </div>
             </div>
         </div>
     </div>
@@ -269,6 +276,55 @@
             </div>
         </div>
     </div>
-</body>
+    <div class="contact-cowork">
+        <div class="contacto-container-title">
+            <h2><strong>Contacto</strong></h2>
+        </div>
+        <div class="form-map-contact">
+            <form action="">
+                <label for="name">Nombres y Apellidos:</label>
+                <input type="text" id="name">
+                <label for="number">Nùmero de Celular:</label>
+                <input type="number" id="number">
+                <label for="number">Mensaje:</label>
+                <textarea></textarea>
+            </form>
+            <div class="map-width">
+                <div class="map-contacto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.1141985069266!2d-77.02560582610188!3d-12.172627744254564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b79d24477159%3A0xc69d5bf65b5df6f0!2sMaximiliano%20Velarde%20247%2C%20Lima%2015064!5e0!3m2!1ses!2spe!4v1754411399538!5m2!1ses!2spe"
+                        width="600" height="450" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="redes-contact">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bx-envelope'></i>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-contain">
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <section class="whatsapp-container">
+        <a href="https://wa.me/51942875386?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
+            <img class="icono-whatsapp" src="img/whatsApps.png" alt=""></a>
+    </section>
+    <script>
+        const cards = document.querySelectorAll(".card");
+        const wrapper = document.querySelector(".cards");
+        wrapper.addEventListener("mousemove", function (event) {
+            cards.forEach((card) => {
+                const rect = card.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
 
+                card.style.background = `radial-gradient(960px circle at ${x}px ${y}px, rgb(255 255 255), transparent 15%)`;
+            });
+        });
+    </script>
+</body>
 </html>
