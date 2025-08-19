@@ -57,10 +57,11 @@ body {
 .contain-banner-figure {
     width: 100%;
     margin-top: -40px;
+    text-align: center;
 }
 
 .contain-banner-figure img {
-    width: 100%;
+    width: 90%;
     height: 380px;
     object-fit: cover;
     border-radius: 243.5px;
@@ -225,10 +226,11 @@ body {
 .contain-position p {
     background-color: #41414152;
     position: absolute;
-    width: 42%;
-    height: 13vh;
-    top: 72%;
+    width: auto;
+    height: 13%;
+    top: 75%;
     right: 46%;
+    padding: 0 10px;
     color: #fff;
     font-size: 30px;
     line-height: 28px;
@@ -401,8 +403,7 @@ body {
     width: 88%;
     margin: auto;
     border-radius: 50px;
-    padding: 0 30px 0px 0;
-    width: min(100%, 1340px);
+    width: min(95%, 1340px);
     margin: 0 auto;
 }
 
@@ -526,6 +527,8 @@ footer {
     }
     .contain-banner-figure img {
         border-radius: 100%;
+        height: min(320px, 400px);
+        width: min(90%, 350px);
     }
     .cowork-banner-down {
         flex-direction: column;
@@ -538,5 +541,118 @@ footer {
     }
     .container-space .contain-banner-title h2{
         font-size: 40px;
+    }
+    .contain-office{
+        width: 95%;
+    }
+    .contain-office p:nth-child(1){
+        text-align: center;
+        margin: auto;
+    }
+    .container-office-space{
+        padding: 0;
+    }
+    .contain-office{
+        padding: 0;
+    }
+    .contain-position{
+        padding: 40px 0 0 0;
+    }
+    .container-space{
+        padding: 40px 0 0 0;
+    }
+    .contain-office:last-child{
+        padding: 50px 0;
+    }
+    .container-service-cowork .contain-banner-title h2{
+        font-size: 40px;
+    }
+    .card{
+        width: 48%;
+    }
+    .question-container-cowork .question-container-title h2{
+        line-height: 52px;
+    }
+    .question-container-cowork .questions-container span{
+        text-align: start;
+        padding: 0 10px 0 0;
+    }
+    .question{
+        margin: 0 15px;
+    }
+    .question p.show{
+        padding: 30px 0;
+    }
+    .question button{
+        padding: 20px 5px 20px 0;
+    }
+    .contact-cowork .form-map-contact{
+        flex-direction: column;
+    }
+    .contact-cowork .form-map-contact form, 
+    .contact-cowork .form-map-contact .map-width{
+        width: 85%;
+    }
+    .contact-cowork .form-map-contact form input, textarea{
+        width: 100%;
+    }
+    .question-container-cowork .question-container-title{
+        padding: 160px 0 50px 0;
+    }
+    .contain-banner-cowork .contain-banner-title h2,
+    .container-space .contain-banner-title h2{
+        width: 90%;
+        margin: auto;
+    }
+    .contain-banner-cowork br{
+        display: none
+    }
+}
+
+@media screen and (min-width: 715px) and (max-width: 1000px){
+    .contain-banner-cowork .contain-banner-title h2{
+        text-align: center;
+        font-size: 60px;
+    }
+    .contain-office{
+        width: 45%;
+    }
+    .card{
+        width: 23%;
+    }
+    .questions-container {
+        max-width: 650px;
+    }
+    .question-container-cowork .question-container-title{
+        padding: 160px 0 50px 0;
+    }
+    .contact-cowork .form-map-contact form input, textarea{
+        width: 90%;
+    }
+    .contain-banner-cowork br{
+        display: none
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px){
+    .contain-banner-cowork .contain-banner-title h2,
+    .container-space .contain-banner-title h2{
+        width: 85%;
+        margin: auto;
+    }
+    .contain-banner-cowork br{
+        display: none
+    }
+    .container-office-space{
+        justify-content: right;
+    }
+    .contain-office {
+        width: 33%;
+    }
+    .card{
+        width: 24%;
+    }
+    .contact-cowork .form-map-contact form input, textarea{
+        width: 90%;
     }
 }

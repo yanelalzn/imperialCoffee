@@ -70,6 +70,7 @@ header{
     transition: color 0.5s;
     text-transform: uppercase;
     z-index: 1;
+    cursor: pointer;
 }
 .nav-list .nav-item button:hover:before {
     top: -114px;
@@ -92,9 +93,6 @@ header{
     left: 100%;
     transition: all 0.7s;
 }
-.nav-item{
-    text-align: center;
-}
 
 /* coworking */
 
@@ -114,7 +112,9 @@ header{
   transition: transform 0.3s ease-in-out;
   line-height: 10px;
 }
-
+.nav-animate{
+    text-align: center;
+}
 .nav-animate:hover {
     animation-name: elementor-animation-pulse;
     animation-duration: 1s;
@@ -138,7 +138,7 @@ header{
     width: 100%;
     height: 850px;
     background-image: url(img/banner.png);
-    background-size: 100% 100%;
+    background-size: 100% 101%;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -223,9 +223,9 @@ header{
 .btn-banner-menu:after {
     content: "";
     position: absolute;
-    left: 5px;
+    left: 45px;
     top: calc(50% - 0px);
-    width: 98%;
+    width: 93%;
     margin: 0 auto;
     height: 4px;
     background: #E1BC8A;
@@ -245,8 +245,11 @@ header{
     background: #36332D;
     font-family: "Grenze", serif;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-banner-menu .icon{
+    display: flex;
+    align-items: center;
     z-index: 50;
     font-size: 50px;
 }
@@ -485,15 +488,19 @@ header{
     display: none;
 }
 .galeria-card.show{
-    animation: fadeIn .5s ease;
+    animation: fadeIn .8s ease-in-out;
 }
 @keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0% {
+    opacity: 0;
+    width: 0%;
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    width: 95%;
+    transform: translateX(0px);
+  }
 }
 .galeria{
     display: flex;
@@ -1592,7 +1599,6 @@ input[type="number"]::-webkit-inner-spin-button {
         inset: 0;
         display: grid;
         gap: 1rem;
-        text-align: center;
         padding: 14rem 11%;
         background-color: #fff;
         z-index: 10;
@@ -1646,6 +1652,17 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .nav-list .nav-item button{
         display: none;
+    }
+    .nav-link-cowork{
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 10px;
+        border-bottom: 1px solid #9f9d9dc9;
+        line-height: 20px;
+        text-align: center;
+    }
+    .nav-animate:hover{
+        animation-name: none;
     }
     
 }
